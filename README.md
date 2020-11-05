@@ -1,16 +1,14 @@
 # Blog_It
 
-A new Flutter project.
+This a a Notes App made using Flutter and Firebase which makes boring task of making notes intresting with images.
 
-## Getting Started
+# Features :
+<img src="https://img.shields.io/badge/Feature-Firebase-brightgreen"/>
+<img src="https://img.shields.io/badge/Feature-Firestore-green"/>
+<img src="https://img.shields.io/badge/Feature-Available%20Offline-red"/>
+<img src="https://img.shields.io/badge/Feature-Dark%20Theme-lightgrey"/>
+<img src="https://img.shields.io/badge/Feature-Cached%20Images-blue"/>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# APP Preview :
+<img src="assets/Preview1.jpeg" height="800"/><br>
+<img src="assets/Preview2.jpeg" height="800"/><br>
