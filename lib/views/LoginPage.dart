@@ -9,7 +9,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          // mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
               "Note ",
@@ -29,8 +29,6 @@ class LoginPage extends StatelessWidget {
           Text(
             'Login',
             style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold,color: Colors.blue),
-          ),SizedBox(
-            height: 30,
           ),
           Container(
             height: 400,
@@ -38,7 +36,7 @@ class LoginPage extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: CachedNetworkImage(imageUrl: 'https://image.freepik.com/free-vector/sign-page-abstract-concept-illustration-enter-application-mobile-screen-user-login-form-website-page-interface-ui-new-profile-registration-email-account_335657-936.jpg')),
           SizedBox(
-            height: 20,
+            height: 0,
           ),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 20),
@@ -50,39 +48,44 @@ class LoginPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 10,
           ),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 20),
             padding: EdgeInsets.symmetric(horizontal: 20),
             color: Colors.blue,
             child: TextField(
+              obscureText: true,
               decoration: InputDecoration(
                   border: InputBorder.none, hintText: 'Enter your Password'),
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 10,
           ),
-          FlatButton(
-            color: Colors.white,
-            child: Text(
-              "Lets Goo",
-              style: TextStyle(color: Colors.black),
+          Container(
+            width: 300,
+            height: 45,
+            child: FlatButton(
+              color: Colors.white,
+              child: Text(
+                "Lets Goo",
+                style: TextStyle(color: Colors.black),
+              ),
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => HomePage()));
+              },
             ),
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => HomePage()));
-            },
           ),
           SizedBox(
-            height: 20,
+            height: 5,
           ),
           Text(
             "-OR-",
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),SizedBox(
-            height: 20,
+            height: 10,
           ),
           GestureDetector(
             onTap: (){

@@ -30,7 +30,7 @@ class SignupPage extends StatelessWidget {
             'Sign Up',
             style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold,color: Colors.blue),
           ),SizedBox(
-            height: 30,
+            height: 0,
           ),
           Container(
             height: 400,
@@ -38,7 +38,18 @@ class SignupPage extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: CachedNetworkImage(imageUrl: 'https://image.freepik.com/free-vector/adding-contacts-phone-metaphor-illustration_82574-8975.jpg')),
           SizedBox(
-            height: 20,
+            height: 0,
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            color: Colors.blue,
+            child: TextField(
+              decoration: InputDecoration(
+                  border: InputBorder.none, hintText: 'Enter your Username'),
+            ),
+          ),SizedBox(
+            height: 10,
           ),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 20),
@@ -50,13 +61,14 @@ class SignupPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 10,
           ),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 20),
             padding: EdgeInsets.symmetric(horizontal: 20),
             color: Colors.blue,
             child: TextField(
+              obscureText: true,
               decoration: InputDecoration(
                   border: InputBorder.none, hintText: 'Enter your Password'),
             ),
@@ -67,7 +79,7 @@ class SignupPage extends StatelessWidget {
           FlatButton(
             color: Colors.white,
             child: Text(
-              "Lets Goo",
+              "Create Account",
               style: TextStyle(color: Colors.black),
             ),
             onPressed: () {
@@ -75,21 +87,6 @@ class SignupPage extends StatelessWidget {
                   context, MaterialPageRoute(builder: (context) => HomePage()));
             },
           ),
-          SizedBox(
-            height: 20,
-          ),
-          Text(
-            "-OR-",
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          ),SizedBox(
-            height: 20,
-          ),
-          GestureDetector(
-            onTap: (){
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => HomePage()));
-            },
-            child: Text('Dont have an Account? Create an Account',style: TextStyle(fontSize: 15,fontWeight: FontWeight.w500),))
         ],
       ),
     );
