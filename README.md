@@ -1,4 +1,4 @@
-# Blog_It
+# Note_It
 
 This a a Notes App made using Flutter and Firebase which makes boring task of making notes intresting with images.
 
